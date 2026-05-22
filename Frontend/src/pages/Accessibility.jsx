@@ -200,7 +200,7 @@ const Accessibility = () => {
   const gs = gestureStatusConfig[gestureStatus] || gestureStatusConfig.stopped;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50">
+    <div className="min-h-screen bg-transparent">
       <div className="max-w-7xl mx-auto px-6 py-8">
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
@@ -211,7 +211,7 @@ const Accessibility = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
           {/* Vision Assist */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="bg-white/70 backdrop-blur-md rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
             <div className="p-5 border-b border-slate-100 flex items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <div className="w-9 h-9 rounded-xl bg-teal-600 flex items-center justify-center text-white">
@@ -349,7 +349,7 @@ const Accessibility = () => {
           </div>
 
           {/* Gesture Control */}
-          <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="bg-white/70 backdrop-blur-md rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
             <div className="p-5 border-b border-slate-100 flex items-center justify-between gap-3">
               <div className="flex items-center gap-2">
                 <div className="w-9 h-9 rounded-xl bg-purple-600 flex items-center justify-center text-white">

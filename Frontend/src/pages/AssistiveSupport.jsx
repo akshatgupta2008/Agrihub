@@ -146,8 +146,8 @@ const AssistiveSupport = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-teal-50">
-      <header className="bg-white border-b border-slate-200 shadow-sm">
+    <div className="min-h-screen bg-transparent">
+      <header className="bg-white/75 backdrop-blur-md border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <button

@@ -5,22 +5,22 @@
 @tailwind utilities;
 
 :root {
-  /* Colors - Equal Ratio Color Combo: Deep Teal & Vibrant Coral */
-  --color-primary: #0d9488;
-  --color-primary-light: #ccfbf1;
-  --color-primary-dark: #0f766e;
+  /* Colors - Organic Agri Theme: Forest Green & Sunflower */
+  --color-primary: #1b5e20;
+  --color-primary-light: #dff5e1;
+  --color-primary-dark: #0f3d13;
   
-  --color-secondary: #f97316;
-  --color-secondary-light: #ffedd5;
-  --color-secondary-dark: #ea580c;
+  --color-secondary: #ffb300;
+  --color-secondary-light: #fff3cc;
+  --color-secondary-dark: #c68400;
 
   --color-success: #10b981;
   --color-warning: #f59e0b;
   --color-danger: #ef4444;
   
-  --color-text-main: #0f172a;
-  --color-text-muted: #64748b;
-  --color-bg-main: #f8fafc;
+  --color-text-main: #0b1b10;
+  --color-text-muted: #52665b;
+  --color-bg-main: #f6fbf4;
   --color-bg-card: #ffffff;
   --color-border: #e2e8f0;
 
@@ -28,11 +28,11 @@
   --font-sans: 'Outfit', sans-serif;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  --shadow-glow: 0 0 15px rgba(13, 148, 136, 0.3);
-  --shadow-glow-secondary: 0 0 15px rgba(249, 115, 22, 0.3);
+  --shadow-sm: 0 1px 2px 0 rgba(3, 7, 4, 0.05);
+  --shadow-md: 0 8px 20px -12px rgba(3, 7, 4, 0.24), 0 2px 6px -2px rgba(3, 7, 4, 0.08);
+  --shadow-lg: 0 18px 38px -24px rgba(3, 7, 4, 0.34), 0 8px 18px -12px rgba(3, 7, 4, 0.14);
+  --shadow-glow: 0 0 18px rgba(27, 94, 32, 0.28);
+  --shadow-glow-secondary: 0 0 18px rgba(255, 179, 0, 0.25);
 
   /* Radius */
   --radius-md: 12px;
@@ -52,10 +52,37 @@
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-bg-main);
+  background:
+    radial-gradient(1200px 700px at 18% 0%, var(--color-primary-light) 0%, rgba(255, 255, 255, 0) 60%),
+    radial-gradient(1000px 650px at 82% 10%, var(--color-secondary-light) 0%, rgba(255, 255, 255, 0) 60%),
+    var(--color-bg-main);
   color: var(--color-text-main);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* 3D scene sits behind all pages */
+.agri-scene {
+  overflow: hidden;
+}
+
+.agri-scene canvas {
+  display: block;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Soft organic overlay to keep contrast for text on top of the 3D scene */
+.agri-overlay {
+  background:
+    radial-gradient(1100px 700px at 20% 10%, color-mix(in srgb, var(--color-primary-light) 70%, transparent) 0%, transparent 58%),
+    radial-gradient(900px 600px at 78% 18%, color-mix(in srgb, var(--color-secondary-light) 60%, transparent) 0%, transparent 58%),
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-bg-main) 86%, transparent) 0%,
+      color-mix(in srgb, var(--color-bg-main) 62%, transparent) 40%,
+      color-mix(in srgb, var(--color-bg-main) 86%, transparent) 100%
+    );
 }
 
 a {

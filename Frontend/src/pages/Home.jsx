@@ -90,9 +90,9 @@ const steps = [
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-transparent">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-teal-600 via-teal-500 to-emerald-500 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-primary via-primary-dark to-secondary overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <svg className="w-full h-full" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
             <circle cx="900" cy="100" r="300" fill="white" />
@@ -103,21 +103,21 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6 py-20 md:py-28">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm text-teal-100 text-sm font-medium mb-6 border border-white/20">
-                <Sprout className="w-4 h-4 text-emerald-200" />
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/15 backdrop-blur-sm text-white/90 text-sm font-medium mb-6 border border-white/20">
+                <Sprout className="w-4 h-4 text-white/80" />
                 Agriculture, reimagined for you
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
                 Book farm assets
                 <span className="block text-yellow-300">Without the wait</span>
               </h1>
-              <p className="text-teal-100 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
+              <p className="text-white/90 text-lg md:text-xl leading-relaxed mb-8 max-w-lg">
                 Skip the delays and middlemen. Connect farmers, service providers, and village operators for tractor booking, labor booking, crop advice, weather alerts, and GPS tracking.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/farmer/register"
-                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-teal-700 font-bold text-base shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all"
+                  className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-white text-primary-dark font-bold text-base shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all"
                 >
                   Get Started Free <ArrowRight className="w-4 h-4" />
                 </Link>
@@ -162,7 +162,7 @@ const Home = () => {
       </section>
 
       {/* Features */}
-      <section id="features" className="py-20 bg-white">
+      <section id="features" className="py-20 bg-white/70 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
             <span className="inline-block px-4 py-1.5 rounded-full bg-teal-50 text-teal-600 text-xs font-semibold uppercase tracking-wide mb-3 border border-teal-200">
@@ -214,7 +214,7 @@ const Home = () => {
       </section>
 
       {/* How It Works */}
-      <section id="how-it-works" className="py-20 bg-gradient-to-br from-slate-50 to-teal-50">
+      <section id="how-it-works" className="py-20 bg-white/45 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
             <span className="inline-block px-4 py-1.5 rounded-full bg-teal-50 text-teal-600 text-xs font-semibold uppercase tracking-wide mb-3 border border-teal-200">
@@ -248,7 +248,7 @@ const Home = () => {
       </section>
 
       {/* For Whom Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white/65 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-3">

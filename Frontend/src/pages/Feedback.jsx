@@ -51,7 +51,7 @@ const Feedback = () => {
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-10">
-      <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div className="bg-white/70 backdrop-blur-md rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
         <div className="px-6 py-5 border-b border-slate-100">
           <h1 className="text-lg font-bold text-slate-800">Feedback</h1>
           <p className="text-sm text-slate-500 mt-1">Share your experience so we can improve AgriHub.</p>
